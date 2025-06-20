@@ -1,2 +1,4 @@
 # Cookie-audit-Extension
 To enable this extension, got to browser's extension settings , than manage extension, turn on dev mode on. Find the option called load unpacked and click on it. Lastly find and upload.
+
+The extension displays the date, name of the cookie, domain, and a brief description. Future updates will include cookie expiry dates, categories, and secure or not. Not so reliable yet, but the data is getting in real-time, few more complex algorithms and we absolutely make it perfect, although, we extract description of cookie from cookiedatabase.org and other similar website, just because of these websites are nested, it is really hard to mine data, but we are still at learning phase we surely make this extension perfectly ok. Also, there is screens shot added of the extension for reference.
