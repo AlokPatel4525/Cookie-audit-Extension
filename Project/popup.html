@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Privacy Protector</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      width: 320px;
+    }
+    .section {
+      margin-bottom: 10px;
+    }
+    .settings-container {
+      list-style-type: none; /* Remove default list style */
+      padding: 0;
+    }
+    .settings-container li {
+      margin-bottom: 8px;
+    }
+    .settings-container label {
+      display: flex;
+      align-items: center;
+    }
+    .settings-container .checkbox-label input[type="checkbox"] {
+      margin-right: 8px;
+    }
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .button-container button {
+      padding: 8px 12px;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+    }
+    .green-button {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .blue-button {
+      background-color: #2196F3;
+      color: white;
+    }
+    /* Additional styles for Show Notifications checkbox */
+    .show-notifications-label {
+      border-top: 1px solid #ddd;
+      padding-top: 8px;
+    }
+    .show-notifications-label input[type="checkbox"] {
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="section">
+    <h2>Settings</h2>
+    <ul class="settings-container">
+      <li><label class="checkbox-label"><input type="checkbox" id="ad-block"> Ad Blocker</label></li>
+      <li><label class="checkbox-label"><input type="checkbox" id="popup-block"> Pop-Up Blocker</label></li>
+      <li><label class="checkbox-label"><input type="checkbox" id="tracker-alerts"> Tracker Alerts</label></li>
+      <li><label class="checkbox-label"><input type="checkbox" id="cookie-alerts"> Cookie Alerts</label></li>
+      <li class="show-notifications-label"><label><input type="checkbox" id="notifications"> Show Notifications</label></li>
+    </ul>
+  </div>
+  <div class="button-container">
+    <button id="save-btn" class="blue-button">Save Settings</button>
+    <button id="view-history" class="green-button">View Cookie Alert History</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

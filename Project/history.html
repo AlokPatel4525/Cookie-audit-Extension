@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cookie Alert History</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+    }
+    h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .button-container {
+      margin-top: 10px;
+      text-align: right; /* Align button to the right */
+    }
+    button {
+      margin: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <button id="clear-history">Clear History</button>
+  </div>
+  <h2>Cookie Alert History</h2>
+  <table id="history-table">
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Website</th>
+        <th>Cookie Name</th>
+        <th>Description</th> <!-- New column for Description -->
+     
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  <script src="history.js"></script>
+</body>
+</html>
